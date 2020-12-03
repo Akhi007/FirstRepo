@@ -1,0 +1,15 @@
+
+    <div class="container">
+        <form (ngSubmit)="submitForm()">
+            <small class="text-danger">{{msg}}</small>
+          <h3>DELETE USER</h3>
+    
+          <div class="form-group">
+            <label for="name"> User ID:</label>
+            <input type="text" class="form-control" placeholder="Enter userId" name="Id" [(ngModel)]="deleteUser.id">
+          </div>
+              <button type="submit" class="btn btn-danger" (click)="submitForm()">delete</button>
+              </form>
+            </div>
+             
+

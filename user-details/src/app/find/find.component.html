@@ -1,0 +1,33 @@
+
+<small class="text-danger">{{msg}}</small>
+<h3>FIND USER</h3>
+
+<form class="form-inline">
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="userId" class="sr-only">Enter User ID</label>
+    <input
+      [(ngModel)]="user.id"
+      type="text"
+      class="form-control"
+      name="userId"
+      placeholder="Enter User ID"
+    />
+  </div>
+  <button (click)="findBook()" type="submit" class="btn btn-primary mb-2">
+    Find
+  </button>
+</form>
+
+<p>
+  <b>First Name:</b><span> {{ user.firstName }}</span>
+</p>
+<p>
+  <b>Last Name:</b><span> {{ user.lastName }}</span>
+</p>
+<p>
+  <b>Age:</b><span> {{ user.age }}</span>
+</p>
+
+<p>
+  <b>Location:</b><span> {{ user.location }}</span>
+</p>

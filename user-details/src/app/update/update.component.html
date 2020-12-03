@@ -1,0 +1,33 @@
+
+    <div class="container">
+        <form (ngSubmit)="submitForm()">
+          
+          <h3>UPDATE USER</h3>
+
+          <div class="form-group">
+            <label for="name">User ID:</label>
+            <input type="text" class="form-control" placeholder="Enter User Id" name="id" [(ngModel)]="updateUser.id">
+          </div>
+    
+          <div class="form-group">
+            <label for="name">First Name:</label>
+            <input type="text" class="form-control" placeholder="Enter firstName" name="firstName" [(ngModel)]="updateUser.firstName">
+          </div>
+          <div class="form-group">
+            <label for="name">Last Name:</label>
+            <input type="text" class="form-control" placeholder="Enter lastName" name="lastName" [(ngModel)]="updateUser.lastName">
+          </div>
+
+          <div class="form-group">
+            <label for="name">Age:</label>
+            <input type="text" class="form-control" placeholder="Enter age" name="age" [(ngModel)]="updateUser.age">
+          </div>
+          <div class="form-group">
+            <label for="name">Location:</label>
+            <input type="text" class="form-control" placeholder="Enter location" name="location" [(ngModel)]="updateUser.location">
+          </div>
+              <button type="submit" class="btn btn-info" (click)="submitForm()">submit</button>
+              </form>
+            </div>
+             
+
